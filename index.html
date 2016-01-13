@@ -50,16 +50,15 @@
         <p class="lead">
             Generic installation templates are defined for different frameworks or cms (currently symfony, drupal, wordpress). When creating a project, a git repository is associated with this installation template. Thus, virtual machines can be run on demand by deploying the site on a preinstalled system following prerequisites specified in the template.
             <br/><br/>
-            Big picture of the project with the main node at left, compute cloud (openstack) at center and monitoring node at right<br>
-            <img src="/assets/images/bigpicture.png" border="0"><br/>
+            Below, the <a href="#BigPicture">Big picture</a>, <a href="#Features">Features</a> and User-Interfaces (<a href="#WEBUI">Web</a>, <a href="#CLI">CLI</a>, and <a href="#Android">Android</a>) of the project. On <a href="#BigPicture">Big picture</a>, there are the main node at left, compute cloud (openstack) at center and monitoring node at right.<br>
+            <img id="BigPicture" src="/assets/images/bigpicture.png" border="0"><br/><br/>
         </p>
        </div>
 </div>
 
 
 <div class="row section">
-    <div class="col-md-12">
-        <h1 class="divider"><span>Features</span></h1>
+    <div class="col-md-12" id="Features">
         <div class="row">
             <div class="col-md-6">
                 <h2><i class="fa fa-cloud"></i> Openstack Cloud</h2>
@@ -99,14 +98,13 @@
 
 <div class="row section">
     <div class="col-md-12">
-        <h1 class="divider"><span>Exchanges with the REST API</span></h1>
-        <div class="row">
+        <div class="row" id="WEBUI">
         <i class="fa fa-desktop"></i>
         <p>
             <img src="/assets/images/webui.png" border="0">
         </p>
         </div>
-        <div class="row">
+        <div class="row" id="CLI">
         <i class="fa fa-terminal"></i>
         <p>
             <pre>
@@ -133,7 +131,7 @@ Commands:
             </pre>
         </p>
         </div>
-        <div class="row">
+        <div class="row" id="Android">
         <i class="fa fa-phone"></i>
         <p>           
             <img src="/assets/images/android.png" border="0">
@@ -144,7 +142,7 @@ Commands:
 
 <div class="row section">
     <div class="col-md-12">
-        <h1 class="divider"><span><i class="fa fa-folder-open-o"></i> Github Repositories</span></h1>
+        <h1><span><center><i class="fa fa-folder-open-o"></i> Github Repositories</center></span></h1>
         <p>The main repository <a href="https://github.com/ricofehr/nextdeploy" target="_blank">nextdeploy</a></p>
         <p>The Cli repository <a href="https://github.com/ricofehr/nextdeploy-cli" target="_blank">nextdeploy-cli</a></p>
         <p>The Puppet patterns repository <a href="https://github.com/ricofehr/nextdeploy-puppet" target="_blank">nextdeploy-puppet</a></p>
@@ -155,40 +153,37 @@ Commands:
 
 <div class="row section">
  <div class="col-md-12">
-                <h1 class="divider"><span><i class="fa fa-laptop"></i> Local Installation </span></h1>
+                <h1><span><center><i class="fa fa-laptop"></i> Local Installation </center></span></h1>
                 <p>
                     A "magical" script manages the complete installation* (only sudo and curl are prerequisites) on local computer (OSX, Debian, Ubuntu or Fedora are supported). But it needs a lot of ram (>=12Go) and a powerful cpu. The installation is done by vagrants tools with 6 defined virtual machines (1 for core node, 4 for openstack nodes and 1 for monitoring node). Once completed, you can start webui in your browser and start working with projects and VMS. But the vms are launched inside a compute node, .. which is already a vagrant vm. So this causes a very long (~1h30 vs 20min on real cloud) VM creation process.<br><br>
 
-                    * This script installs some needed tools for execute NextDeploy on local computer: virtualbox or kvm, git, and vagrant. And also, the script changes both files /etc/hosts and /etc/resolv.conf (look -r parameter to disable that). He must be used at your own risk.
+                    * This script installs some needed tools for execute NextDeploy on local computer: virtualbox or kvm, git, and vagrant. And also, the script changes both files /etc/hosts and /etc/resolv.conf (add -r parameter to disable that). He must be used at your own risk.
                     <pre>
 [erifeh@pm-erifeh nextdeploy]$ ./scripts/./setup -h
 Usage: ./scripts/./setup [options]
 
 For example:
-./scripts/./setup -y
-                    </pre>
-                </p>
+./scripts/./setup -y</pre></p>
             </div>
 </div>
 
 <div class="row section">
             <div class="col-md-12">
-                <h1 class="divider"><span><i class="fa fa-keyboard-o"></i> Remote Installation </span></h1>
+                <h1><span><center><i class="fa fa-keyboard-o"></i> Remote Installation </center></span></h1>
                 <p>
                     An other "magical" script makes remote installation easier and manages lot of tasks for you.
                     <pre>
 Usage: ./scripts/./setup-remote [options]
 
 For example (change fqdn and domain with yours), adding a third nova node:
-./scripts/./setup-remote --puppetmaster-ip XXX.XXX.XXX.XXX --puppetmaster-fqdn puppetnextdeploy --domain nextdeploy.io -y --nova3-ip XXX.XXX.XXX.XXX
-                    </pre>
+./scripts/./setup-remote --puppetmaster-ip XXX.XXX.XXX.XXX --puppetmaster-fqdn puppetnextdeploy --domain nextdeploy.io -y --nova3-ip XXX.XXX.XXX.XXX</pre>
                 </p>
             </div>
 </div>
 
 <div class="row section">
     <div class="col-md-12">
-        <h1 class="divider"><span><i class="fa fa-flask"></i> Todo</span></h1>
+        <h1><span><center><i class="fa fa-flask"></i> Todo</center></span></h1>
         NextDeploy is currently in BETA. Some features are still missing and are planned for future releases.<br>
         <ul>
             <li>Monitoring graph reports available for each users (admin has already this view)</li>
@@ -212,7 +207,7 @@ For example (change fqdn and domain with yours), adding a third nova node:
 
 <div class="row section">
     <div class="col-md-12">
-        <h1 class="divider"><span><i class="fa fa-info"></i> News</span></h1>
+        <h1><span><center><i class="fa fa-info"></i> News</center></span></h1>
 
 
         <article class="note note-partial">
@@ -221,22 +216,16 @@ For example (change fqdn and domain with yours), adding a third nova node:
             <div class="note-excerpt">
                 <p>v0.13 is pushed on github. Thanks to a complete code review (mainly rails and ember parts), this version is more stable and more optimized.</p>
             </div>
-        </article>
+        </article><br/>
 
-    </div>
-</div>
-
-<div class="row section">
-    <div class="col-md-12">
-        <h1 class="divider"><span>Follow <a href="https://twitter.com/nextdeploy" target="_blank">@nextdeploy</a></span></h1>
-        <a class="twitter-timeline"  href="https://twitter.com/nextdeploy" data-widget-id="684143234185052160">Tweets de @nextdeploy</a>
+<a class="twitter-timeline"  href="https://twitter.com/nextdeploy" data-widget-id="684143234185052160">Tweets de @nextdeploy</a>
     </div>
 </div>
 
             
 <div class="row section">
     <div class="col-md-12">
-        <h1 class="divider"><span>About</span></h1>
+        <h1 class="divider"><span></span></h1>
         NextDeploy is created and maintened by Eric Fehr.<br/> 
         Eric is Lead DevOps at <a href="www.publicisnurun.fr" target="_blank">Publicis-Nurun</a> (Paris) with over ten years experience in Web and IT.<br>
         NextDeploy is currently used in BETA at Publicis Nurun<br/><br/>
