@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="/assets/css/bootstrap-social.css"/>
         <link rel="stylesheet" href="/assets/css/style.css"/>
+        <link rel="stylesheet" href="/assets/css/sidebar.css"/>
         <link rel="icon" href="/assets/images/favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64 128x128" type="image/vnd.microsoft.icon">
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css"/>
         <script src="https://use.typekit.net/yjz4fyo.js"></script>
@@ -31,17 +32,54 @@
 
 </script>
     </head>
-    <body style="padding-top: 5em">
-    <a href="https://github.com/ricofehr"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
-
+    <body style="padding-top: 5em" id="nextdeploy">
+    <a href="https://github.com/ricofehr"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
 
 <div class="wrapper">
+
+<!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#nextdeploy">NextDeploy</a>
+                </li>
+                <li>
+                    <a href="#description">Description</a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="#UIS">User Interfaces</a>
+                </li>
+                <li>
+                    <a href="#repositories">Github</a>
+                </li>
+                <li>
+                    <a href="#local">Local Setup</a>
+                </li>
+                <li>
+                    <a href="#remote">Remote Setup</a>
+                </li>
+                <li>
+                    <a href="#todo">Todo</a>
+                </li>
+                <li>
+                    <a href="#news">News</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
     <div class="container-fluid">
         <header class="site-header">
     <div class="site-title lead"><center><img src="/assets/images/logo128.png" border="0"> NextDeploy Project<br></center></div>
     <br/>
 </header>
-<div class="row">
+<div class="row" id="description">
     <div class="col-md-12">
         <p class="lead">
             NextDeploy is a deployment system of virtualized development environments in a compute cloud.
@@ -50,15 +88,15 @@
         <p class="lead">
             Generic installation templates are defined for different frameworks or cms (currently symfony, drupal, wordpress). When creating a project, a git repository is associated with this installation template. Thus, virtual machines can be run on demand by deploying the site on a preinstalled system following prerequisites specified in the template.
             <br/><br/>
-            Below, the <a href="#BigPicture">Big picture</a>, <a href="#Features">Features</a> and User-Interfaces (<a href="#WEBUI">Web</a>, <a href="#CLI">CLI</a>, and <a href="#Android">Android</a>) of the project. On <a href="#BigPicture">Big picture</a>, there are the main node at left, compute cloud (openstack) at center and monitoring node at right.<br>
+            Below, the <a href="#BigPicture">Big picture</a>, <a href="#features">Features</a> and User-Interfaces (<a href="#WEBUI">Web</a>, <a href="#CLI">CLI</a>, and <a href="#Android">Android</a>) of the project. On <a href="#BigPicture">Big picture</a>, there are the main node at left, compute cloud (openstack) at center and monitoring node at right.<br>
             <img id="BigPicture" src="/assets/images/bigpicture.png" border="0"><br/><br/>
         </p>
        </div>
 </div>
 
 
-<div class="row section">
-    <div class="col-md-12" id="Features">
+<div class="row section" id="features">
+    <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
                 <h2><i class="fa fa-cloud"></i> Openstack Cloud</h2>
@@ -96,7 +134,7 @@
     </div>
 </div>
 
-<div class="row section">
+<div class="row section" id="UIS">
     <div class="col-md-12">
         <div class="row" id="WEBUI">
         <i class="fa fa-desktop"></i>
@@ -140,7 +178,7 @@ Commands:
     </div>
 </div>
 
-<div class="row section">
+<div class="row section" id="repositories">
     <div class="col-md-12">
         <h1><span><center><i class="fa fa-folder-open-o"></i> Github Repositories</center></span></h1>
         <p>The main repository <a href="https://github.com/ricofehr/nextdeploy" target="_blank">nextdeploy</a></p>
@@ -151,7 +189,7 @@ Commands:
     </div>
 </div>
 
-<div class="row section">
+<div class="row section" id="local">
  <div class="col-md-12">
                 <h1><span><center><i class="fa fa-laptop"></i> Local Installation </center></span></h1>
                 <p>
@@ -167,7 +205,7 @@ For example:
             </div>
 </div>
 
-<div class="row section">
+<div class="row section" id="remote">
             <div class="col-md-12">
                 <h1><span><center><i class="fa fa-keyboard-o"></i> Remote Installation </center></span></h1>
                 <p>
@@ -181,7 +219,7 @@ For example (change fqdn and domain with yours), adding a third nova node:
             </div>
 </div>
 
-<div class="row section">
+<div class="row section" id="todo">
     <div class="col-md-12">
         <h1><span><center><i class="fa fa-flask"></i> Todo</center></span></h1>
         NextDeploy is currently in BETA. Some features are still missing and are planned for future releases.<br>
@@ -206,7 +244,7 @@ For example (change fqdn and domain with yours), adding a third nova node:
     </div>
 </div>
 
-<div class="row section">
+<div class="row section" id="news">
     <div class="col-md-12">
         <h1><span><center><i class="fa fa-info"></i> News</center></span></h1>
 
@@ -231,7 +269,7 @@ For example (change fqdn and domain with yours), adding a third nova node:
 </div>
 
             
-<div class="row section">
+<div class="row section" id="about">
     <div class="col-md-12">
         <h1 class="divider"><span></span></h1>
         NextDeploy is created and maintained by Eric Fehr.<br/> 
@@ -255,6 +293,19 @@ For example (change fqdn and domain with yours), adding a third nova node:
         </p>
     </div>
 </div>
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
