@@ -81,13 +81,13 @@
     <div class="col-md-12">
         <p class="lead">
             NextDeploy is a deployment system of virtualized development environments in a compute cloud.
-            <br/><img src="/assets/images/usecase.png" border="0"><br/>
+            <br/><img src="/assets/images/usecase.png" class="img-responsive" border="0"><br/>
         </p>
         <p class="lead">
             Generic installation templates are defined for different frameworks or cms (currently symfony, drupal, wordpress). When creating a project, a git repository is associated with this installation template. Thus, virtual machines can be run on demand by deploying the site on a preinstalled system following prerequisites specified in the template.
             <br/><br/>
             Below, the <a href="#BigPicture">Big picture</a>, <a href="#features">Features</a> and User-Interfaces (<a href="#WEBUI">Web</a>, <a href="#CLI">CLI</a>, and <a href="#Android">Android</a>) of the project. On <a href="#BigPicture">Big picture</a>, there are the main node at left, compute cloud (openstack) at center and monitoring node at right.<br>
-            <img id="BigPicture" src="/assets/images/bigpicture.png" border="0"><br/><br/>
+            <img id="BigPicture" src="/assets/images/bigpicture.png" data-toggle="tooltip" data-placement="right" title="Big Picture of NextDeploy" class="img-responsive" border="0"><br/><br/>
         </p>
        </div>
 </div>
@@ -137,7 +137,13 @@
         <div class="row" id="WEBUI">
         <i class="fa fa-desktop"></i>
         <p>
-            <img src="/assets/images/webui.png" border="0">
+            <img src="/assets/images/webui-wall.png" alt="Wall of news displayed just after successfull authentification" class="img-responsive" data-toggle="tooltip" data-placement="right" title="Wall of news displayed just after successfull authentification" border="0">
+        </p>
+        <p>
+            <img src="/assets/images/webui-help.png" alt="Help popin who give details about the WebUi interface" class="img-responsive" data-toggle="tooltip" data-placement="right" title="Help popin who give details about the WebUi interface" border="0">
+        </p>
+        <p>
+            <img src="/assets/images/webui-vm.png" alt="Form who launches a vm with the desired project which we want test it" class="img-responsive" data-toggle="tooltip" data-placement="right" title="Form who launches a vm with the desired project which we want test it" border="0">
         </p>
         </div>
         <div class="row" id="CLI">
@@ -148,7 +154,7 @@
 Commands:
   ndeploy clone [projectname]                      # clone project...
   ndeploy config [endpoint] [username] [password]  # get/set prope...
-  ndeploy destroy                                  # destroy curre...
+  ndeploy destroy [VmId]                           # destroy curre...
   ndeploy getftp assets|dump [project]             # get an assets...
   ndeploy git [cmd]                                # Executes a gi...
   ndeploy help [COMMAND]                           # Describe avai...
@@ -157,7 +163,7 @@ Commands:
   ndeploy listftp assets|dump [project]            # list assets a...
   ndeploy projects                                 # list projects...
   ndeploy putftp assets|dump [project] [file]      # putftp an ass...
-  ndeploy ssh                                      # ssh into remo...
+  ndeploy ssh [VmId]                               # ssh into remo...
   ndeploy sshkey                                   # Put your publ...
   ndeploy sshkeys                                  # List sshkeys ...
   ndeploy up                                       # launch curren...
@@ -224,7 +230,6 @@ For example (change fqdn and domain with yours), adding a third nova node:
         <ul>
             <li>Monitoring graph reports available for each users (admin has already this view)</li>
             <li>Code parser and security scan for projects</li>
-            <li>Improve WebUI: paging system, search function, more relevant error display, ...</li>
             <li>Optimize time creating vms (curently ~20 minutes on an openstack cloud)</li>
             <li>Writing mocks and validation process for webui (nextdeploy-webui) and puppet (nextdeploy-puppet) repositories</li>
             <li>Work on high availability process</li>
@@ -245,6 +250,21 @@ For example (change fqdn and domain with yours), adding a third nova node:
 <div class="row section" id="news">
     <div class="col-md-12">
         <h1><span><center><i class="fa fa-info"></i> News</center></span></h1>
+        <article class="note note-partial">
+            <time class="note-publish-datetime">Feb 29, 2016</time>
+            <h2 class="note-title">NextDeploy BETA v1.0 released!</a></h2>
+            <div class="note-excerpt">
+                <p>v1.0 is pushed on github: Recode completely the webui with Ember v2.3.0, Give a choice of versions on services when an user starts a vm, Propose multiple version of nodejs, An Admin user can decide to start a vm without basicauth, Search field on webui, Paging system on webui, Ssh to a desired vm with ndeploy cli, Destroy a desired vm with ndeploy cli</p>
+            </div>
+        </article><br/>
+
+        <article class="note note-partial">
+            <time class="note-publish-datetime">Jan 29, 2016</time>
+            <h2 class="note-title">NextDeploy BETA v0.15 released!</a></h2>
+            <div class="note-excerpt">
+                <p>v0.15 is pushed on github: A project lead can add himself users with projects, replace homepage with a wall of NextDeploy News, some bugfixes</p>
+            </div>
+        </article><br/>
 
         <article class="note note-partial">
             <time class="note-publish-datetime">Jan 17, 2016</time>
@@ -300,6 +320,18 @@ For example (change fqdn and domain with yours), adding a third nova node:
         $("#wrapper").toggleClass("toggled");
     });
     </script>
+
+    <!-- Image ToolTips -->
+    <script>
+$(document).ready(function(){
+    var width = $(window).width();
+    if (width > 1200) {
+        $('[data-toggle="tooltip"]').tooltip();
+    } else {
+        $('.sidebar-nav').hide();
+    }
+});
+</script>
 
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </body>
