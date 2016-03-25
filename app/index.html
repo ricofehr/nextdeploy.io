@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NextDeploy</title>
+    <meta name="description" content="NextDeploy is an ongoing deployment system virtualized development environment in a cloud"/>
+    <meta name="robots" content="index, follow"/>
+    <meta property="og:title" content="NextDeploy"/>
+    <meta property="og:site_name" content="NextDeploy Project"/>
+    <meta property="og:url" content="https://nextdeploy.io/"/>
+    <meta property="og:description" content="NextDeploy is an ongoing deployment system virtualized development environment in a cloud"/>
+    <meta property="og:type" content="website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/nextdeployio.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css"/>
+    <link rel="stylesheet" href="css/sidebar.css"/>
+    <link rel="icon" href="images/favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64 128x128" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <script src="assets/vendor.js"></script>
+    <script src="assets/nextdeployio.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>

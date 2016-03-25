@@ -1,0 +1,85 @@
+body{font-weight:300;-webkit-font-smoothing:antialiased}
+h2{text-align:center;font-weight:300}
+.btn-social-icon{margin-bottom:4px}
+.jumbotron{position:relative;font-size:16px;color:#fff;color:rgba(255,255,255,0.75);text-align:center;border-radius:0;padding-bottom:30px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
+.jumbotron h1{margin-bottom:2px;font-weight:300;letter-spacing:-1px;color:#fff}
+.jumbotron .jumbotron-links iframe{width:100px !important;height:20px !important;border:none;overflow:hidden;margin:2px}
+.jumbotron p a,.jumbotron .jumbotron-links a{font-weight:500;color:#fff}
+.jumbotron p{text-align: left;}
+.jumbotron .jumbotron-links{margin-top:15px;margin-bottom:0;padding-left:0;list-style:none;font-size:14px}
+.jumbotron .jumbotron-links li{display:inline}
+.jumbotron .jumbotron-links li+li{margin-left:5px}
+.btn-outline{margin-top:10px;margin-bottom:10px;padding:5px 8px;font-size:inherit;font-weight:500;color:#fff;background-color:transparent;border-color:#fff;border-color:rgba(255,255,255,0.5);transition:all .1s ease-in-out}
+.jumbotron .jumbotron-links li .btn-outline:hover{color:#42b9f1;background-color:#fff;border-color:#fff}
+.jumbotron .jumbotron-links li .btn-outline:active{color:#42b9f1;background-color:#fff;border-color:#fff}
+.jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:15px;background-color:rgba(0,0,0,0.2)}
+.screens{text-align: center !important;}
+
+.vertical-center {
+  min-height: 500px;  /* Fallback for vh unit */
+  min-height: 500px; /* You might also want to use
+                        'height' property instead.
+                        
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+  
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
+
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+  
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+  
+     Therefore, we should use the following declarations to get it centered again */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+}
+
+
+/*footer{text-align:center;opacity:.8;padding:50px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}footer a{color:#fff}footer a:hover{color:#fff}*/
+@media all and (min-width: 720px) {.btn-outline{padding:15px 21px;}.jumbotron .jumbotron-links li+li{margin-left:10px}}
+/*@media all and (min-width: 1350px) {.jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:18px;background-color:rgba(0,0,0,0.2)}}
+@media all and (max-width: 1200px) {.jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:18px;background-color:rgba(0,0,0,0.2)}}
+*/
+@media all and (max-width: 620px) {.jumbotron .jumbotron-links .simplify{margin-left:0px} .simplify{display:none;}}
+@media all and (min-height: 620px) {
+  body, html { 
+    height: 100%;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+  }
+  .jumbotron{
+    height:100vh;
+  }
+}
+
+.navbar-fixed-bottom {
+  margin-bottom: 45px !important;
+  text-align: center;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}

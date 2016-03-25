@@ -1,0 +1,72 @@
+<div class="row section">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <p style="text-align:left;">
+        <h1><span><center>News</center></span></h1><br/>
+        {{#if isPage1}}
+        <article class="note note-partial">
+            <time class="note-publish-datetime">Feb 29, 2016</time>
+            <h2 class="note-title">NextDeploy BETA v1.0 released!</h2>
+            <div class="note-excerpt">
+                <p>v1.0 is pushed on github: Recode completely the webui with Ember v2.3.0, Give a choice of versions on services when an user starts a vm, Propose multiple version of nodejs, An Admin user can decide to start a vm without basicauth, Search field on webui, Paging system on webui, Ssh to a desired vm with ndeploy cli, Destroy a desired vm with ndeploy cli</p>
+            </div>
+        </article><br/>
+        <div class="navbar-fixed-bottom">
+            <div class="col-md-1 col-md-offset-6">
+                <a class="fa fa-long-arrow-right fa-lg" {{action "togglePage" 2}} href=""></a>
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if isPage2}}
+        <article class="note note-partial">
+            <time class="note-publish-datetime">Jan 29, 2016</time>
+            <h2 class="note-title">NextDeploy BETA v0.15 released!</h2>
+            <div class="note-excerpt">
+                <p>v0.15 is pushed on github: A project lead can add himself users with projects, replace homepage with a wall of NextDeploy News, some bugfixes</p>
+            </div>
+        </article><br/>
+        <div class="navbar-fixed-bottom">
+            <div class="col-md-1 col-md-offset-5">
+            <a class="fa fa-long-arrow-left fa-lg" {{action "togglePage" 1}} href=""></a>
+            </div>
+            <div class="col-md-1">
+                <a class="fa fa-long-arrow-right fa-lg" {{action "togglePage" 3}} href=""></a>
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if isPage3}}
+        <article class="note note-partial">
+            <time class="note-publish-datetime">Jan 17, 2016</time>
+            <h2 class="note-title">NextDeploy BETA v0.14 released!</h2>
+            <div class="note-excerpt">
+                <p>v0.14 is pushed on github: Error modal on webui, performance tuning for REST API, some other improvements and bugfix</p>
+            </div>
+        </article><br/>
+        <div class="navbar-fixed-bottom">
+            <div class="col-md-1 col-md-offset-5">
+            <a class="fa fa-long-arrow-left fa-lg" {{action "togglePage" 2}} href=""></a>
+            </div>
+            <div class="col-md-1">
+            <a class="fa fa-long-arrow-right fa-lg" {{action "togglePage" 4}} href=""></a>
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if isPage4}}
+        <article class="note note-partial">
+            <time class="note-publish-datetime">Jan 03, 2016</time>
+            <h2 class="note-title">NextDeploy BETA v0.13 released!</h2>
+            <div class="note-excerpt">
+                <p>v0.13 is pushed on github. Thanks to a complete code review (mainly rails and ember parts), this version is more stable and more optimized.</p>
+            </div>
+        </article><br/>
+        <div class="navbar-fixed-bottom">
+            <div class="col-md-1 col-md-offset-5">
+            <a class="fa fa-long-arrow-left fa-lg" {{action "togglePage" 3}} href=""></a>
+            </div>
+        </div>
+        {{/if}}
+        </p>
+    </div>
+</div>
