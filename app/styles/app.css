@@ -1,4 +1,4 @@
-body{font-weight:300;-webkit-font-smoothing:antialiased}
+body{overflow-x: hidden;font-weight:300;-webkit-font-smoothing:antialiased;font-size:16px;height: 100vh;color:#fff;color:rgba(255,255,255,0.75);text-align:center;border-radius:0;padding-bottom:30px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
 h2{text-align:center;font-weight:300}
 .btn-social-icon{margin-bottom:4px}
 .jumbotron{position:relative;font-size:16px;color:#fff;color:rgba(255,255,255,0.75);text-align:center;border-radius:0;padding-bottom:30px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
@@ -12,21 +12,49 @@ h2{text-align:center;font-weight:300}
 .btn-outline{margin-top:10px;margin-bottom:10px;padding:4px 4px;font-size:inherit;font-weight:500;color:#fff;background-color:transparent;border-color:#fff;border-color:rgba(255,255,255,0.5);transition:all .1s ease-in-out}
 .jumbotron .jumbotron-links li .btn-outline:hover{color:#42b9f1;background-color:#fff;border-color:#fff}
 .jumbotron .jumbotron-links li .btn-outline:active{color:#42b9f1;background-color:#fff;border-color:#fff}
-.jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:15px;background-color:rgba(0,0,0,0.2)}
 .screens{text-align: center !important;}
 
-.vertical-center {
-  min-height: 500px;  /* Fallback for vh unit */
-  min-height: 500px; /* You might also want to use
-                        'height' property instead.
-                        
-                        Note that for percentage values of
-                        'height' or 'min-height' properties,
-                        the 'height' of the parent element
-                        should be specified explicitly.
-  
-                        In this case the parent of '.vertical-center'
-                        is the <body> element */
+/*footer{text-align:center;opacity:.8;padding:50px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}footer a{color:#fff}footer a:hover{color:#fff}*/
+@media all and (min-width: 720px) {
+  .btn-outline{padding:15px 21px;}
+  .jumbotron .jumbotron-links li+li{margin-left:10px}
+  .bottom{position:absolute;bottom:0;left:0;right:0;padding:15px;background-color:rgba(0,0,0,0.2)}
+}
+/*@media all and (min-width: 1350px) {.jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:18px;background-color:rgba(0,0,0,0.2)}}
+@media all and (max-width: 1200px) {.jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:18px;background-color:rgba(0,0,0,0.2)}}
+*/
+@media all and (max-width: 620px) {
+  .jumbotron .jumbotron-links .simplify{margin-left:0px} 
+  .simplify{display:none;}
+}
+
+@media all and (min-height: 620px) {
+  body, html { 
+    height: 100%;
+    overflow-x: hidden; 
+    /*overflow-y: hidden;*/
+  }
+  .jumbotron{
+    height:100vh;
+  }
+}
+
+.navbar-fixed-bottom {
+  margin-bottom: 45px !important;
+  text-align: center;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+@media all and (max-width: 970px) {
+  .simp{display:none;}
+}
+@media all and (min-width: 970px) {
+.vertical-screendesc {
+  min-height: 500px;  
+  min-height: 500px; 
 
   /* Make it a flex container */
   display: -webkit-box;
@@ -56,30 +84,4 @@ h2{text-align:center;font-weight:300}
   -webkit-justify-content : center;
           justify-content : center;
 }
-
-
-/*footer{text-align:center;opacity:.8;padding:50px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}footer a{color:#fff}footer a:hover{color:#fff}*/
-@media all and (min-width: 720px) {.btn-outline{padding:15px 21px;}.jumbotron .jumbotron-links li+li{margin-left:10px}}
-/*@media all and (min-width: 1350px) {.jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:18px;background-color:rgba(0,0,0,0.2)}}
-@media all and (max-width: 1200px) {.jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:18px;background-color:rgba(0,0,0,0.2)}}
-*/
-@media all and (max-width: 620px) {.jumbotron .jumbotron-links .simplify{margin-left:0px} .simplify{display:none;}}
-@media all and (min-height: 620px) {
-  body, html { 
-    height: 100%;
-    overflow-x: hidden; 
-    overflow-y: hidden;
-  }
-  .jumbotron{
-    height:100vh;
-  }
-}
-
-.navbar-fixed-bottom {
-  margin-bottom: 45px !important;
-  text-align: center;
-}
-
-.img-responsive {
-    margin: 0 auto;
 }

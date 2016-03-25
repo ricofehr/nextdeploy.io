@@ -28,9 +28,7 @@ export default Ember.Controller.extend({
     /* Load Search only list pages */
     if (/about/.test(currentRoute) ||
         /github/.test(currentRoute) ||
-        /roadmap/.test(currentRoute) ||
-        /news/.test(currentRoute) ||
-        /what/.test(currentRoute)) {
+        /news/.test(currentRoute)) {
       isBottom = true;
     }
 
