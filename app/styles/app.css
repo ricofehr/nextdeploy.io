@@ -9,7 +9,7 @@ h2{text-align:center;font-weight:300}
 .jumbotron .jumbotron-links{margin-top:15px;margin-bottom:0;padding-left:0;list-style:none;font-size:14px}
 .jumbotron .jumbotron-links li{display:inline}
 .jumbotron .jumbotron-links li+li{margin-left:5px}
-.btn-outline{margin-top:10px;margin-bottom:10px;padding:5px 8px;font-size:inherit;font-weight:500;color:#fff;background-color:transparent;border-color:#fff;border-color:rgba(255,255,255,0.5);transition:all .1s ease-in-out}
+.btn-outline{margin-top:10px;margin-bottom:10px;padding:4px 4px;font-size:inherit;font-weight:500;color:#fff;background-color:transparent;border-color:#fff;border-color:rgba(255,255,255,0.5);transition:all .1s ease-in-out}
 .jumbotron .jumbotron-links li .btn-outline:hover{color:#42b9f1;background-color:#fff;border-color:#fff}
 .jumbotron .jumbotron-links li .btn-outline:active{color:#42b9f1;background-color:#fff;border-color:#fff}
 .jumbotron .bottom{position:absolute;bottom:0;left:0;right:0;padding:15px;background-color:rgba(0,0,0,0.2)}
