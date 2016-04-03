@@ -1,15 +1,17 @@
-body{overflow-x: hidden;font-weight:300;-webkit-font-smoothing:antialiased;font-size:16px;height: 100vh;color:#fff;color:rgba(255,255,255,0.75);text-align:center;border-radius:0;padding-bottom:30px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
+body{overflow-x: hidden;font-weight:300;-webkit-font-smoothing:antialiased;height: 100vh;color:#fff;color:rgba(255,255,255,0.75);text-align:center;border-radius:0;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
 h2{text-align:center;font-weight:300}
 .btn-social-icon{margin-bottom:4px}
-.jumbotron{position:relative;font-size:16px;color:#fff;color:rgba(255,255,255,0.75);text-align:center;border-radius:0;padding-bottom:30px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
+.note{font-size:18px;}
+.note-title{font-size:25px;}
+.jumbotron{position:relative;border-radius:0;padding-bottom:30px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
 .jumbotron h1{margin-bottom:2px;font-weight:300;letter-spacing:-1px;color:#fff}
 .jumbotron .jumbotron-links iframe{width:100px !important;height:20px !important;border:none;overflow:hidden;margin:2px}
 .jumbotron p a,.jumbotron .jumbotron-links a{font-weight:500;color:#fff}
-.jumbotron p{text-align: left;}
+.jumbotron p{text-align: left;font-size:17px;}
 .jumbotron .jumbotron-links{margin-top:15px;margin-bottom:0;padding-left:0;list-style:none;font-size:14px}
 .jumbotron .jumbotron-links li{display:inline}
 .jumbotron .jumbotron-links li+li{margin-left:5px}
-.btn-outline{margin-top:10px;margin-bottom:10px;padding:4px 4px;font-size:inherit;font-weight:500;color:#fff;background-color:transparent;border-color:#fff;border-color:rgba(255,255,255,0.5);transition:all .1s ease-in-out}
+.btn-outline{margin-top:10px;margin-bottom:10px;padding:2px 2px;font-size:inherit;font-weight:500;color:#fff;background-color:transparent;border-color:#fff;border-color:rgba(255,255,255,0.5);transition:all .1s ease-in-out}
 .jumbotron .jumbotron-links li .btn-outline:hover{color:#42b9f1;background-color:#fff;border-color:#fff}
 .jumbotron .jumbotron-links li .btn-outline:active{color:#42b9f1;background-color:#fff;border-color:#fff}
 .screens{text-align: center !important;}
@@ -17,6 +19,9 @@ h2{text-align:center;font-weight:300}
 /*footer{text-align:center;opacity:.8;padding:50px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}footer a{color:#fff}footer a:hover{color:#fff}*/
 @media all and (min-width: 720px) {
   .btn-outline{padding:15px 21px;}
+  .note{font-size:20px;}
+  .note-title{font-size:28px;}
+  .jumbotron p{text-align: left;font-size:20px;}
   .jumbotron .jumbotron-links li+li{margin-left:10px}
   .bottom{position:absolute;bottom:0;left:0;right:0;padding:15px;background-color:rgba(0,0,0,0.2)}
 }
@@ -26,6 +31,11 @@ h2{text-align:center;font-weight:300}
 @media all and (max-width: 620px) {
   .jumbotron .jumbotron-links .simplify{margin-left:0px} 
   .simplify{display:none;}
+}
+
+@media all and (max-device-width: 321px) and (max-device-height: 520px) {
+  .jumbotron .jumbotron-links .simplify2{margin-left:0px}
+  .simplify2{display:none;}
 }
 
 @media all and (min-height: 620px) {

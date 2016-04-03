@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   descPage4: 'List of projects asociated with current user<br class="simp"/><br class="simp"/><br class="simp"/><br class="simp"/><br class="simp"/><br class="simp"/><br class="simp"/><br class="simp"/>',
   descPage5: 'Form who launches a vm with the desired project which current user want test it',
   descPage6: '<br class="simp"/><br class="simp"/>At beginning, the vm is on setup status and is adding to the vm list<br class="simp"/><br class="simp"/><br class="simp"/><br class="simp"/>Once the vm is isntalled, it is on running status',
-  descPage7: 'Some technical details about the virtual machine <span class="simp">who host the project for current user</span>',
+  descPage7: 'Some technical details about the virtual machine',
   descPage8: 'This popin list urls for access and test the project on the vm and some useful tools',
   descPage9: 'After a click on the link \'your website\', the drupal8 (cms associated with this project) website is displaying on the browser. We can test our project.',
   descPage10: 'An help popin is displaying from the toolbar menu',
