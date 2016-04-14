@@ -3,7 +3,7 @@ h2{text-align:center;font-weight:300}
 .btn-social-icon{margin-bottom:4px}
 .note{font-size:18px;}
 .note-title{font-size:25px;}
-.jumbotron{position:relative;border-radius:0;padding-bottom:30px;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
+.jumbotron{position:relative;border-radius:0;background-image:-webkit-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:-o-linear-gradient(left, #42b9f1 0, #0958a2 100%);background-image:linear-gradient(to right, #42b9f1 0, #0958a2 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff42b9f1', endColorstr='#ff0958a2', GradientType=1)}
 .jumbotron h1{margin-bottom:2px;font-weight:300;letter-spacing:-1px;color:#fff}
 .jumbotron .jumbotron-links iframe{width:100px !important;height:20px !important;border:none;overflow:hidden;margin:2px}
 .jumbotron p a,.jumbotron .jumbotron-links a{font-weight:500;color:#fff}
@@ -40,9 +40,8 @@ h2{text-align:center;font-weight:300}
 
 @media all and (min-height: 620px) {
   body, html { 
-    height: 100%;
+    height: 100vh;
     overflow-x: hidden; 
-    /*overflow-y: hidden;*/
   }
   .jumbotron{
     height:100vh;
@@ -102,11 +101,11 @@ h2{text-align:center;font-weight:300}
     height: 320px;
     background-image: url(/images/spritesheet.png);
 
-    -webkit-animation: play 2.5s steps(34) infinite;
-       -moz-animation: play 2.5s steps(34) infinite;
-        -ms-animation: play 2.5s steps(34) infinite;
-         -o-animation: play 2.5s steps(34) infinite;
-            animation: play 2.5s steps(34) infinite;
+    -webkit-animation: play 1.1s steps(34) infinite;
+       -moz-animation: play 1.1s steps(34) infinite;
+        -ms-animation: play 1.1s steps(34) infinite;
+         -o-animation: play 1.1s steps(34) infinite;
+            animation: play 1.1s steps(34) infinite;
 }
 
 @-webkit-keyframes play {

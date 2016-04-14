@@ -33,6 +33,10 @@ export default Ember.Component.extend({
         this.set('previousPage', false);
       }
 
+      if (parseInt(nb) === 11 || parseInt(nb) === 12) {
+        this.set('screenTitle', 'Gitlab Integration');
+      }  
+
       if (parseInt(nb) === 13) {
         this.set('screenTitle', 'Cli Software');
       }      
