@@ -101,11 +101,11 @@ h2{text-align:center;font-weight:300}
     height: 320px;
     background-image: url(/images/spritesheet.png);
 
-    -webkit-animation: play 1.1s steps(34) infinite;
-       -moz-animation: play 1.1s steps(34) infinite;
-        -ms-animation: play 1.1s steps(34) infinite;
-         -o-animation: play 1.1s steps(34) infinite;
-            animation: play 1.1s steps(34) infinite;
+    -webkit-animation: play 1.4s steps(34) infinite;
+       -moz-animation: play 1.4s steps(34) infinite;
+        -ms-animation: play 1.4s steps(34) infinite;
+         -o-animation: play 1.4s steps(34) infinite;
+            animation: play 1.4s steps(34) infinite;
 }
 
 @-webkit-keyframes play {

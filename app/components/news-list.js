@@ -5,36 +5,19 @@ export default Ember.Component.extend({
   isPage2: false,
   isPage3: false,
   isPage4: false,
+  isPage5: false,
+  isPage6: false,
+  isPage7: false,
+  isPage8: false,
+  isPage9: false,
+  isPage10: false,
 
   actions: {
     togglePage: function(nb) {
-      if (parseInt(nb) === 1) {
-        this.set('isPage2', false);
-        this.set('isPage3', false);
-        this.set('isPage4', false);
-        this.set('isPage1', true);
+      for (var i=1; i<11; i++) {
+        this.set('isPage' + i, false);
       }
-
-      if (parseInt(nb) === 2) {
-        this.set('isPage1', false);
-        this.set('isPage3', false);
-        this.set('isPage4', false);
-        this.set('isPage2', true);
-      }
-
-      if (parseInt(nb) === 3) {
-        this.set('isPage2', false);
-        this.set('isPage1', false);
-        this.set('isPage4', false);
-        this.set('isPage3', true);
-      }
-
-      if (parseInt(nb) === 4) {
-        this.set('isPage2', false);
-        this.set('isPage3', false);
-        this.set('isPage1', false);
-        this.set('isPage4', true);
-      }
+      this.set('isPage' + nb, true);
     }
   }
 });
